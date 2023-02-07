@@ -14,10 +14,13 @@
 		C814F38B2951CD30000BF9C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F38A2951CD30000BF9C9 /* Event.swift */; };
 		C814F38D2951EA89000BF9C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F38C2951EA89000BF9C9 /* HomeView.swift */; };
 		C814F38F2951EB76000BF9C9 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F38E2951EB76000BF9C9 /* HomeHeaderView.swift */; };
+		C814F3922952DB4B000BF9C9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F3912952DB4B000BF9C9 /* User.swift */; };
+		C814F3942954334D000BF9C9 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F3932954334D000BF9C9 /* OtherView.swift */; };
 		C8B8D13A291D153500477DB2 /* CafeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8D139291D153500477DB2 /* CafeAppApp.swift */; };
 		C8B8D13C291D153500477DB2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8D13B291D153500477DB2 /* MainTabView.swift */; };
 		C8B8D13E291D153600477DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B8D13D291D153600477DB2 /* Assets.xcassets */; };
 		C8B8D141291D153600477DB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B8D140291D153600477DB2 /* Preview Assets.xcassets */; };
+		C8D4B5F62969C87600B952E8 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4B5F52969C87600B952E8 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +31,14 @@
 		C814F38A2951CD30000BF9C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C814F38C2951EA89000BF9C9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C814F38E2951EB76000BF9C9 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		C814F3912952DB4B000BF9C9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C814F3932954334D000BF9C9 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		C8B8D136291D153500477DB2 /* CafeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B8D139291D153500477DB2 /* CafeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeAppApp.swift; sourceTree = "<group>"; };
 		C8B8D13B291D153500477DB2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C8B8D13D291D153600477DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B8D140291D153600477DB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8D4B5F52969C87600B952E8 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				C814F382295161DD000BF9C9 /* Tab */,
-				C814F38429516299000BF9C9 /* MenuSuggestionSectionView.swift */,
-				C814F3882951929B000BF9C9 /* EventsSectionView.swift */,
 				C814F3902951EB7A000BF9C9 /* Home */,
+				C814F3932954334D000BF9C9 /* OtherView.swift */,
+				C8D4B5F52969C87600B952E8 /* SettingView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -71,6 +77,8 @@
 			children = (
 				C814F38C2951EA89000BF9C9 /* HomeView.swift */,
 				C814F38E2951EB76000BF9C9 /* HomeHeaderView.swift */,
+				C814F38429516299000BF9C9 /* MenuSuggestionSectionView.swift */,
+				C814F3882951929B000BF9C9 /* EventsSectionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -97,6 +105,7 @@
 				C8B8D139291D153500477DB2 /* CafeAppApp.swift */,
 				C814F38629516FE3000BF9C9 /* CoffeeMenu.swift */,
 				C814F38A2951CD30000BF9C9 /* Event.swift */,
+				C814F3912952DB4B000BF9C9 /* User.swift */,
 				C814F383295161F5000BF9C9 /* Scenes */,
 				C8B8D13D291D153600477DB2 /* Assets.xcassets */,
 				C8B8D13F291D153600477DB2 /* Preview Content */,
@@ -187,9 +196,12 @@
 				C8B8D13C291D153500477DB2 /* MainTabView.swift in Sources */,
 				C814F38F2951EB76000BF9C9 /* HomeHeaderView.swift in Sources */,
 				C814F3892951929B000BF9C9 /* EventsSectionView.swift in Sources */,
+				C814F3942954334D000BF9C9 /* OtherView.swift in Sources */,
 				C8B8D13A291D153500477DB2 /* CafeAppApp.swift in Sources */,
 				C814F38D2951EA89000BF9C9 /* HomeView.swift in Sources */,
 				C814F38B2951CD30000BF9C9 /* Event.swift in Sources */,
+				C8D4B5F62969C87600B952E8 /* SettingView.swift in Sources */,
+				C814F3922952DB4B000BF9C9 /* User.swift in Sources */,
 				C814F38529516299000BF9C9 /* MenuSuggestionSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
