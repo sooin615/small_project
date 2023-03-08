@@ -1,5 +1,5 @@
 //
-//  SettingView.swift
+//  SettingMenu.swift
 //  CafeApp
 //
 //  Created by Agiss on 2023/01/08.
@@ -7,22 +7,24 @@
 
 import Foundation
 
-enum Menu: String, CaseIterable {
+enum Menu: String, CaseIterable, Identifiable {
     case sevice = "서비스"
     case cs = "고객지원"
     case terms = "약관 및 정책"
     
     var title: String { rawValue }
+    var id: String { rawValue }
+
     
     var menu: [String] {
         switch self {
         case .sevice: return Servise.allCases.map { $0.title }
-        case .cs: return Servise.allCases.map { $0.title }
-        case .terms: return Servise.allCases.map { $0.title }
+        case .cs: return CS.allCases.map { $0.title }
+        case .terms: return Terms.allCases.map { $0.title }
         }
     }
     
-    enum Servise: String, CaseIterable {
+    enum Servise: String, CaseIterable, Identifiable {
         case frequency = "프리퀀시"
         case reward = "리워드"
         case coupon = "쿠폰"
@@ -34,21 +36,26 @@ enum Menu: String, CaseIterable {
         case myReview = "마이 스타벅스 리뷰"
         
         var title: String { rawValue }
+        var id: String { rawValue }
+
     }
     
-    enum CS: String, CaseIterable {
+    enum CS: String, CaseIterable, Identifiable {
         case storeCare = "스토어 케어"
         case voiceOFCustomer = "고객의 소리"
         case store = "매장 정보"
         
         var title: String { rawValue }
+        var id: String { rawValue }
+
     }
     
-    enum Terms: String, CaseIterable {
+    enum Terms: String, CaseIterable, Identifiable {
         case terms = "이용약관"
         case privacyTerms = "개인정보 처리 방침"
         
         var title: String { rawValue }
+        var id: String { rawValue }
     }
 }
 
